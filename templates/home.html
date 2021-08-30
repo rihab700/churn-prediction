@@ -1,0 +1,210 @@
+<!DOCTYPE hmtl>
+<html>
+<head>
+    <title> Churn Prediction</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+
+    
+</head>
+<body>
+    <h1>Churn Prediction </h1>
+    <div class="container">
+       <form action="/send", name="send_data", method="POST">
+           <table>
+               <tr>
+                   <td class="col-label"> <label>Account Length</label></td>
+                   <td class="col-input"> <input type="text" name="Account_Length" placeholder="Account Length"></td>
+               </tr>
+               <tr>
+                   <td class="col-label"> <label>Total Voice Mails Messages</label></td>
+                   <td class="col-input"> <input type="text" name="Vmail_Message" placeholder="Total Voice Mails Messages"></td>
+               </tr>
+               <tr>
+                <td class="col-label"> <label>Total Day Minutes</label></td>
+                <td class="col-input"> <input type="text" name="Day_Mins" placeholder="Total Day Minutes"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"> <label>Total Evening Minutes</label></td>
+                    <td class="col-input"> <input type="text" name="Eve_Mins" placeholder="Total Evening Minutes"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"> <label>Total Night Minutes</label></td>
+                    <td class="col-input"> <input type="text" name="Night_Mins" placeholder="Total Night Minutes"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"> <label>Total Interational Minutes</label></td>
+                    <td class="col-input"> <input type="text" name="Intl_Mins" placeholder="Total Interational Minutes"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"><label>Total of Customer Service Calls</label></td>
+                    <td class="col-input"> <input type="text" name="CustServ_Calls" placeholder="Total of Customer Service Calls"></td>
+                    </tr>
+                
+                <tr>
+                    <td class="col-label"> <label>International Plan</label></td>
+                    <td class="col-input"> <input type="text" name="Intl_Plan" placeholder="1 for yes, 0 for no"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"> <label>Voice Mail Plan</label></td>
+                    <td class="col-input"> <input type="text" name="Vmail_Plan" placeholder="1 for yes, 0 for no"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"> <label>Total Day Calls</label></td>
+                    <td class="col-input"> <input type="text" name="Day_Calls" placeholder="Total Day Calls"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"> <label>Total Day Charge</label></td>
+                    <td class="col-input"> <input type="text" name="Day_Charge" placeholder="Total Day Charge"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"> <label>Total Evening Calls</label></td>
+                    <td class="col-input"> <input type="text" name="Eve_Calls" placeholder="Total Evening Calls"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"> <label>Total Evening Charge</label></td>
+                    <td class="col-input"> <input type="text" name="Eve_Charge" placeholder="Total Evening Charge"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"> <label>Total Night Calls</label></td>
+                    <td class="col-input"> <input type="text" name="Night_Calls" placeholder="Total Night Calls"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"> <label>Total Night Charge</label></td>
+                    <td class="col-input"> <input type="text" name="Night_Charge" placeholder="Total Night Charge"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"> <label>Total International Calls</label></td>
+                    <td class="col-input"> <input type="text" name="Intl_Calls" placeholder="Total International Calls"></td>
+                </tr>
+                <tr>
+                    <td class="col-label"> <label>Total International Charge</label></td>
+                    <td class="col-input"> <input type="text" name="Intl_Charge" placeholder="Total International Charge"></td>
+                </tr>
+                <tr class="form_wrapper">
+                    <td colspan='2'> <input type="submit" value="PREDICT CHURNER "/></td>
+                </tr>
+
+                    
+
+               
+               
+           </table>
+        </form>
+    </div>
+</body>
+    
+<style>
+    head{
+        background-color: black;
+    }
+body {font-family: Arial, Helvetica, sans-serif; background-color: #FF7F00}
+* {box-sizing: border-box;}
+
+h1 {
+	font-size: 40px;
+	margin-bottom: 30px;
+    margin-left: 105;
+    
+
+}
+
+
+input[type=text], .custom-select {
+width:100%;
+  padding: 12px;
+  border: 1px solid #ccc;
+  border-radius: 4px;
+  box-sizing: border-box;
+  margin-top: 6px;
+  margin-bottom: 16px;
+  resize: vertical;
+    height: auto;
+    font-size: 20px;
+}
+form, table{
+width:100%;
+}
+
+input[type=submit] {
+  background-color: #FF7F00;
+  color: white;
+  padding: 12px 20px;
+  border: none;
+  border-radius: 4px;
+  cursor: pointer;
+  width: 230px;
+
+}
+
+input[type=submit]:hover {
+  background-color: #45a049;
+
+}
+
+.container {
+  border-radius: 5px;
+  background-color: black;
+  padding: 20px;
+  display: flex;
+    margin-right: 40px;
+    margin-left: 40px
+    
+
+}
+
+.form_wrapper {
+  flex:1;
+  text-align: center;
+}
+label{
+color:white;
+    font-size: 20px;
+}
+
+.col-label{
+width:25%;
+}
+.col-input{
+    width: 30px;
+        
+    }
+
+
+
+</style>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+    
+
+
+
+
+
+</html>
